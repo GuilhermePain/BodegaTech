@@ -80,13 +80,19 @@
     background-color: #239fd0;
     color: white;
     font-weight: 600;
-    border: none;
+    border: transparent;
     outline: 0;
     border-radius: 30px;
     padding: 0.8rem;
     cursor: pointer;
     width: 180px;
     margin-top: 5px;
+}
+
+.buttonForm:active {
+    background-color: transparent;
+    border: 1px solid #239fd0;
+    color: #239fd0;
 }
 
 .linkForm:active {
