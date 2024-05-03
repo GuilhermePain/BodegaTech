@@ -1,11 +1,8 @@
 import React from 'react'
-import Form from '../components/FormLoginAndRegister/Form'
+import FormRegister from '../components/form/register/FormRegister.jsx'
 
 const Register = () => {
-  return <Form 
-    titleForm="Registrar-se"
-    buttonForm="Registrar"
-  />
+  return <FormRegister />
 }
 
 export default Register

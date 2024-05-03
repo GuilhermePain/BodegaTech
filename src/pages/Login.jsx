@@ -1,11 +1,8 @@
 import React from 'react'
-import Form from '../components/FormLoginAndRegister/Form'
+import FormLogin from '../components/form/login/FormLogin.jsx'
 
 const Login = () => {
-  return <Form 
-    titleForm="Login"
-    buttonForm="Entrar"
-  />
+  return <FormLogin />
 }
 
 export default Login
