@@ -4,15 +4,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./Home";
+import './main.css';
+import LandingPage from "./pages/LandingPage.jsx";
 import Login from "./pages/Login";
 import Register from "./pages/Register.jsx"
-import { GlobalStyle } from "./GlobalStyle.js";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <LandingPage/>,
   },
   {
     path: "/login",
@@ -26,7 +27,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <GlobalStyle />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

@@ -1,19 +1,19 @@
 import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
-import "firebase/compat/database"
+import "firebase/compat/firestore"
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
-}
+  apiKey: "AIzaSyDg8pphkwEoJAuzCVrdJRyg_29lUKUfaM8",
+  authDomain: "bodegatech-58e49.firebaseapp.com",
+  projectId: "bodegatech-58e49",
+  storageBucket: "bodegatech-58e49.appspot.com",
+  messagingSenderId: "791312526148",
+  appId: "1:791312526148:web:3c23d498a95d7dff678511"
+};
 
 const app = firebase.initializeApp(firebaseConfig)
 
 const auth = app.auth()
-const db = app.database()
+const db = app.firestore()
 
 export { auth, db }
