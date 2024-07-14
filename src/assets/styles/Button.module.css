@@ -41,3 +41,27 @@
     text-decoration: 2px underline;
     transition: 0.2s ease-in-out;
 }
+
+.ctaButton {
+    font-size: 30px;
+    background-color: #239FD0;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    outline: 0;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ctaButton:hover {
+    background-color: rgba(35, 159, 208, 0.800);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+}
+
+.ctaButton:active {
+    background-color: transparent;
+    border: 2px solid #239FD0;
+    color: #239FD0;
+}

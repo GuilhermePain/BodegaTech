@@ -1,18 +1,28 @@
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
+import ImgLandingPage from '../assets/img/undraw_shopping_app_flsj.png';
+import styles from '../assets/styles/LandingPage.module.css';
+import Button from '../components/button/Button';
 
 function LandingPage() {
   return (
     <Layout>
-      <main>
-        <aside>
-          <h1>BodegaTech</h1>
-          <h2>Simplifique a Gestão das Contas de Seus Clientes!</h2>
-          <Link to="/login" >
-            <button>Começar!</button>
+      <section className={styles.startSection}>
+        <aside className={styles.leftSide}>
+          <div className={styles.title}>
+            <h1>BodegaTech</h1>
+            <h2>
+              <span>Simplifique</span> a Gestão <br />das <span>Contas</span> de Seus Clientes!
+            </h2>
+          </div>
+          <Link to="/register" >
+            <Button text='Começar!' color='primaryButton' typeButton='ctaButton' />
           </Link>
         </aside>
-      </main>
+        <aside className={styles.rightSide}>
+          <img src={ImgLandingPage} alt="Imagem da landing page" />
+        </aside>
+      </section>
     </Layout>
   )
 }
