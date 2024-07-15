@@ -1,0 +1,66 @@
+.mainContent {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.250);
+    border-radius: 20px;
+}
+
+.leftSide {
+    width: 60%;
+    text-align: center;
+}
+
+.leftSide img {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.rightSide {
+    width: 40%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 32px 52px;
+}
+
+.form .title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form .fieldsArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 500;
+}
+
+.fieldsArea .fields {
+    background-color: #E6E6E6;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: 0;
+    padding: 10px;
+}
+
+.form .fields:focus {
+    border: 2px solid #239FD0;
+}
+
+.form .showPassword {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    gap: 3px;
+}

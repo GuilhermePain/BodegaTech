@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../assets/styles/Header.module.css';
-import LogoBodegaTech from '../assets/img/logoBodegaTech.svg';
+import LogoBodegaTech from '../assets/images/logoBodegaTech.svg';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 

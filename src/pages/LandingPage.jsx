@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
-import ImgLandingPage from '../assets/img/undraw_shopping_app_flsj.png';
+import ImgLandingPage from '../assets/images/undraw_shopping_app_flsj.png';
 import styles from './../assets/styles/LandingPage.module.css';
 import Button from '../components/Button';
 

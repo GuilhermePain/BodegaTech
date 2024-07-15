@@ -11,6 +11,10 @@ const Button = ({ text, color, typeButton }) => {
       className = styles.ctaButton;
     }
 
+    if(typeButton === 'loginAndRegisterButton') {
+      className = styles.loginAndRegisterButton;
+    }
+
     if(color === 'secondaryButton') {
       className = styles.secondaryButton;
     }
