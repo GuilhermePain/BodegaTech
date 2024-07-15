@@ -41,7 +41,7 @@ const RegisterForm = () => {
               <label>Mostrar senha</label>
               <input type="checkbox" />
             </div>
-            <Button text="Registrar" typeButton='loginAndRegisterButton'>Registrar</Button>
+            <Button text="Registrar" typeButton="loginAndRegisterButton" />
             <p>Já tem uma conta? <Link to="/login">Entre</Link></p>
         </form>
       </aside>

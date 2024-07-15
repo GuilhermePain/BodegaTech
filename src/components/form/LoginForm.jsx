@@ -25,7 +25,7 @@ const LoginForm = () => {
               <label>Mostrar senha</label>
               <input type="checkbox" />
             </div>
-            <Button text="Registrar" typeButton='loginAndRegisterButton'>Registrar</Button>
+            <Button text="Entrar" typeButton="loginAndRegisterButton" />
             <p>Não tem uma conta? <Link to="/register">Registre-se</Link></p>
         </form>
       </aside>
