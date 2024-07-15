@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../../assets/styles/Header.module.css';
-import LogoBodegaTech from './../../assets/img/logoBodegaTech.svg';
+import styles from '../assets/styles/Header.module.css';
+import LogoBodegaTech from '../assets/img/logoBodegaTech.svg';
 import { Link } from 'react-router-dom';
-import Button from '../button/Button';
+import Button from './Button';
 
 const Header = () => {
   return (
