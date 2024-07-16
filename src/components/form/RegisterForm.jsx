@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ImgRegister from '../../assets/images/undraw_Gone_shopping_re_2lau.png';
 import styles from '../../assets/styles/RegisterForm.module.css';
 import Button from '../Button';
 
 const RegisterForm = () => {
+
+  const [isShow, setIsSHow] = useState(false);
+
+  const handlePassword = () => {
+    setIsSHow(!isShow);
+  };
+
   return (
     <div className={styles.mainContent}>
       <aside className={styles.leftSide}>
@@ -31,15 +38,15 @@ const RegisterForm = () => {
             </div>
             <div className={styles.fieldsArea}>
               <label>Senha</label>
-              <input type="password" className={styles.fields} />
+              <input type={isShow ? 'text' : 'password'} className={styles.fields} />
             </div>
             <div className={styles.fieldsArea}>
               <label>Confirmar senha</label>
-              <input type="password" className={styles.fields} />
+              <input type={isShow ? 'text' : 'password'} className={styles.fields} />
             </div>
             <div className={styles.showPassword}>
-              <label>Mostrar senha</label>
-              <input type="checkbox" />
+              <label htmlFor="showPassword">Mostrar senha</label>
+              <input type="checkbox" id="showPassword" checked={isShow} onChange={handlePassword} />
             </div>
             <Button text="Registrar" typeButton="loginAndRegisterButton" />
             <p>Já tem uma conta? <Link to="/login">Entre</Link></p>
