@@ -15,7 +15,7 @@ function LandingPage() {
               <span>Simplifique</span> a Gestão <br />das <span>Contas</span> de Seus Clientes!
             </h2>
           </div>
-          <Link to="/register" >
+          <Link to="/tipodeconta" >
             <Button text='Começar!' color='primaryButton' typeButton='ctaButton' />
           </Link>
         </aside>
